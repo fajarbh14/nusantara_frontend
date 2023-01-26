@@ -63,7 +63,7 @@ function SignIn() {
             <div>
               <h2 className="h2">Welcome Back!</h2>
               <p className="subtitle text-neutral-500 mt-3">
-                Sign in and let's continue our journey towards free education.
+                Sign in and let's continue Your Journey For List Favorite Book.
               </p>
             </div>
             <img src="/images/sign_in.png" alt="mockup" className="w-[500px]" />
