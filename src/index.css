@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 100%
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.answer-question {
+  width: 23px !important
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h1 {
+    @apply font-poppins font-bold text-[64px] tracking-[-2%] leading-none;
+  }
+
+  .h2 {
+    @apply font-poppins font-bold text-[40px] tracking-[-0.02em] leading-none;
+  }
+
+  .h3 {
+    @apply font-poppins font-bold text-[24px] tracking-[-2%] leading-[1.2];
+  }
+
+  .subtitle {
+    @apply font-work font-medium text-[20px] tracking-[3%];
+  }
+
+  .pretitle {
+    @apply font-work font-bold text-[14px] tracking-[5%];
+  }
+
+  .small-text {
+    @apply font-work font-normal text-[10px] tracking-[3%] leading-[1.4];
+  }
+
+  .body {
+    @apply font-work font-normal text-[16px] leading-[1.4] text-[#646983];
+  }
+
+  .button-text {
+    @apply font-work font-bold text-[16px];
+  }
+
+  .link {
+    @apply font-work font-bold text-[16px] underline;
+  }
+
+  .btn-primary {
+    @apply button-text bg-primary-500 text-bright shadow-glow rounded-[14px] py-[10px] px-[40px];
+  }
+
+  .label {
+    @apply bg-neutral-50 w-[400px] px-[21px] py-[13px] rounded-[14px];
+  }
+
+  .label-form {
+    @apply font-work font-normal text-[16px] text-neutral-500
+  }
+
+  .text-input {
+    @apply bg-neutral-50 w-full px-[21px] py-[13px] rounded-[14px];
+  }
 }
